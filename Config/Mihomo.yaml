@@ -31,8 +31,8 @@ p: &p
     timeout: 5000 # 健康检查超时时间
     lazy: true # 懒惰状态
 override: &override
-  tfo: true # 启用 TCP Fast Open, 仅生效于 TCP 协议
-  mptcp: true # 启用 TCP Multi Path, 仅生效于 TCP 协议
+  tfo: false # 启用 TCP Fast Open, 仅生效于 TCP 协议
+  mptcp: false # 启用 TCP Multi Path, 仅生效于 TCP 协议
   udp: true # 是否允许 UDP 通过代理，默认为 false
   udp-over-tcp: true # 启用 UDP over TCP，默认 false
   skip-cert-verify: true # 跳过证书验证，仅适用于使用 tls 的协议
