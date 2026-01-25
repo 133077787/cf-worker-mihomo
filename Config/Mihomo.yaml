@@ -249,19 +249,12 @@ dns:
     - 223.5.5.5
   enhanced-mode: fake-ip # 启用增强模式 redir-host or fake-ip
   fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
-  fake-ip-filter-mode: blacklist
+  fake-ip-filter-mode: rule
   fake-ip-filter:
-    - RULE-SET:private_domain,fakeip_filter_domain,cn_domain
-    - dns.alidns.com
-    - cloudflare-dns.com
-    - dns.google
-    - dns.adguard-dns.com
-    - dns.nextdns.io
-    - public.dns.iij.jp
-    - dns0.eu
-    - dns.18bit.cn
-    - 2025.dns1.top
-    - dns.ipv4dns.com
+    - RULE-SET,private_domain,real-ip
+    - RULE-SET,fakeip_filter_domain,fake-ip
+    - RULE-SET,cn_domain,real-ip
+    - MATCH,fake-ip
   nameserver-policy:
     "+.jp":
       - "https://public.dns.iij.jp/dns-query#h3=true" # IIJ （日本） DNS over H3
