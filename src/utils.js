@@ -2,21 +2,11 @@
 import YAML from 'yaml';
 export const backimg = base64DecodeUtf8('aHR0cHM6Ly90LmFsY3kuY2MveWN5');
 export const subapi = base64DecodeUtf8('aHR0cHM6Ly9zdWItc3RvcnQtbm9kZWpzLnBhZ2VzLmRldg==');
-export const mihomo_top = base64DecodeUtf8(
-    'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0t3aXNtYS9jZi13b3JrZXItbWlob21vL21haW4vQ29uZmlnL01paG9tb19saXRlLnlhbWw='
-);
-export const singbox_1_11 = base64DecodeUtf8(
-    'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0t3aXNtYS9jZi13b3JrZXItbWlob21vL3JlZnMvaGVhZHMvbWFpbi9Db25maWcvc2luZ2JveF8xLjExLlguanNvbg=='
-);
-export const singbox_1_12 = base64DecodeUtf8(
-    'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0t3aXNtYS9jZi13b3JrZXItbWlob21vL3JlZnMvaGVhZHMvbWFpbi9Db25maWcvc2luZ2JveC0xLjEyLlguanNvbg=='
-);
-export const singbox_1_12_alpha = base64DecodeUtf8(
-    'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0t3aXNtYS9jZi13b3JrZXItbWlob21vL3JlZnMvaGVhZHMvbWFpbi9Db25maWcvc2luZ2JveC0xLjEyLlguYWxwaGEuanNvbg=='
-);
-export const singbox_1_13 = base64DecodeUtf8(
-    'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0t3aXNtYS9jZi13b3JrZXItbWlob21vL3JlZnMvaGVhZHMvbWFpbi9Db25maWcvc2luZ2JveC0xLjEzLlguanNvbg=='
-);
+export const mihomo_top = "https://cdn.jsdelivr.net/gh/Kwisma/cf-worker-mihomo@main/Config/Mihomo_lite.yaml"
+export const singbox_1_11 = "https://cdn.jsdelivr.net/gh/Kwisma/cf-worker-mihomo@main/Config/singbox_1.11.X.json"
+export const singbox_1_12 = "https://cdn.jsdelivr.net/gh/Kwisma/cf-worker-mihomo@main/Config/singbox_1.12.X.json"
+export const singbox_1_12_alpha = "https://cdn.jsdelivr.net/gh/Kwisma/cf-worker-mihomo@main/Config/singbox-1.12.X.alpha.json"
+export const singbox_1_13 = "https://cdn.jsdelivr.net/gh/Kwisma/cf-worker-mihomo@main/Config/singbox_1.13.X.json"
 export const beiantext = base64DecodeUtf8('6JCMSUNQ5aSHMjAyNTAwMDHlj7c=');
 export const beiandizi = base64DecodeUtf8('aHR0cHM6Ly90Lm1lL01hcmlzYV9rcmlzdGk=');
 // 实现base64解码UTF-8字符串的函数
